@@ -87,17 +87,17 @@ function init() {
 			      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
 			    </div>
 			    <div class="card-body d-flex flex-wrap gap-1 justify-content-center align-items-center">
-			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 8px;">
+			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 10px;">
 			        <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
 			      </a>
-			      <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 8px;">
+			      <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 10px;">
 			        <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
 			      </a>
-            	</div>
-          	</div>
+            </div>
+          </div>
         </div>
-    </div>	
-</div>
+    	</div>	
+	</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

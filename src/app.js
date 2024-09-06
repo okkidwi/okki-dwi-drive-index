@@ -118,8 +118,8 @@ function init() {
       <a href="${UI.contact_link}" title="Please allow us up to 48 hours to process DMCA requests.">DMCA</a> ∙ <a href="${UI.contact_link}">Contact</a>
       </div>
       <div class="col-lg-4 col-md-12 text-lg-end">
-        <p href="https://www.virustotal.com/gui/url/e50a5fa98a2c85720d02b1e31e6b44d7c7925edfc38b77b09e78d705ed7814dd" target="_blank" style="font-family: 'Lato', sans-serif; font-size: 16px;">
-          <img src="https://img.shields.io/badge/KEAMANAN%20WEBSITE-100-green"/>
+        <p>
+          <a href="#"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F` + window.location.host + `&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
         </p>
       </div>
 	  <script>

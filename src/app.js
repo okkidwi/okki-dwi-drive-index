@@ -391,7 +391,7 @@ function requestListPath(path, params, resultCallback, authErrorCallback, retrie
 				if (response.status === 500) {
 					document.getElementById('list').innerHTML = `<div class="text-center">
 					<div class="card-body text-center">
-					  <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>500.</b> That’s an error.</div>
+					  <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>500.</b> Itu sebuah kesalahan.</div>
 					</div>
 					<p>The requested URL was not found on this server. That’s all we know.</p>
 					<div class="card-text text-center">
@@ -1395,7 +1395,7 @@ async function fallback(id, type) {
 						<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 					</div>
 					<div class="card-body text-center">
-						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error. ` + error + `</div>
+						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu sebuah kesalahan. ` + error + `</div>
 						<p>The requested URL was not found on this server. That’s all we know.</p>
 						<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Home</a>
 					</div>
@@ -1465,7 +1465,7 @@ async function file(path) {
 					<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 				</div>
 				<div class="card-body text-center">
-					<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error. ` + error + `</div>
+					<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu sebuah kesalahan. ` + error + `</div>
 					<p>The requested URL was not found on this server. That’s all we know.</p>
 					<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Home</a>
 				</div>

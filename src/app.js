@@ -142,45 +142,49 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </div>
-<button id="back-to-top" class="btn btn-secondary btn-lg back-to-top shadow border border-light" style="--bs-border-opacity: .4;" role="button"><i class="fas fa-chevron-up m-0"></i></button>
-<footer class="footer text-center mt-auto container ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed;': ''} ${UI.hide_footer ? ' display:none;': ' display:block;'}">
+
+<!-- Back to top button -->
+<button id="back-to-top" class="btn btn-secondary btn-lg back-to-top shadow border border-light" style="--bs-border-opacity: .4;" role="button">
+  <i class="fas fa-chevron-up m-0"></i>
+</button>
+
+<!-- Footer -->
+<footer class="footer text-center mt-auto container" style="position: fixed; display:block;">
     <div class="container" style="padding-top: 15px;">
       <div class="row">
-      <div class="col-lg-4 col-md-12 text-lg-start">
-      © ${new Date().getFullYear()} <a href="${UI.company_link}" target="_blank">${UI.company_name}</a> dengan ☕
-      ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''}
+        <div class="col-lg-4 col-md-12 text-lg-start">
+          © 2024 <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">Admin</a> dengan ☕
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <a href="your-dmca-link-here" title="Harap beri kami waktu hingga 48 jam untuk memproses permintaan DMCA.">DMCA</a> ∙ <a href="your-contact-link-here">Kontak</a>
+        </div>
+        <div class="col-lg-4 col-md-12 text-lg-end">
+          <a href="#"><img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fokkidwi.indrives.workers.dev&label=Pengunjung%20Hari%20Ini&countColor=%23263759" target="_blank"></a>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-12">
-      <a href="${UI.contact_link}" title="Harap beri kami waktu hingga 48 jam untuk memproses permintaan DMCA.">DMCA</a> ∙ <a href="${UI.contact_link}">Kontak</a>
-      </div>
-      <div class="col-lg-4 col-md-12 text-lg-end">
-        <p>
-          <a href="#"><img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fokkidwi.indrives.workers.dev&label=Pengunjung%20Hari%20Ini&countColor=%23263759" target="_blank" style="font-family: 'Lato', sans-serif; font-size: 16px;">
-       </p>
-      </div>
-	  <script>
-		let btt = document.getElementById("back-to-top");
-		window.onscroll = function () {
-			scrollFunction();
-		};
-		function scrollFunction() {
-			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-				btt.style.display = "block";
-			} else {
-				btt.style.display = "none";
-			}
-		}
-		btt.addEventListener("click", backToTop);
-		function backToTop() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	  </script>
-      </div>
-	</div>
-</footer>`;
-	$('body').html(html);
-}
+    </div>
+</footer>
+
+<!-- JavaScript for Back to Top button -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    let btt = document.getElementById("back-to-top");
+    
+    // Function to show or hide the button based on scroll position
+    window.onscroll = function () {
+        if (window.scrollY > 50) { // when user scrolls 50px from top
+            btt.style.display = "block";
+        } else {
+            btt.style.display = "none";
+        }
+    };
+
+    // Function to scroll back to the top of the page
+    btt.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
 
 const gdrive_icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.3 78" style="width: 1.3em;">
 <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"></path>

@@ -81,22 +81,27 @@ function init() {
           </div>
         </div>
       </div>
-  <div class="col-lg-6 col-md-12">
-    <div class="card text-white mb-3 h-100">
-      <div class="card-header">
-        <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
-      </div>
-      <div class="card-body d-flex flex-wrap gap-2 justify-content-center align-items-center">
-        <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" class="social-link">
-          <img class="image" alt="Facebook" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
-        </a>
-        <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" class="social-link">
-          <img class="image" alt="Telegram" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
-        </a>
-      </div>
+<div class="col-lg-6 col-md-12">
+  <div class="card text-white mb-3 h-100" style="margin-bottom: 50px;">
+    <div class="card-header">
+      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
+    </div>
+    <div class="card-body d-flex flex-wrap gap-2 justify-content-center align-items-center">
+      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 8px;">
+        <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
+      </a>
+      <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 8px;">
+        <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
+      </a>
     </div>
   </div>
 </div>
+
+footer {
+  padding-top: 50px; /* Memberikan ruang lebih di bagian atas footer */
+  margin-top: 50px; /* Atau bisa menggunakan margin-top */
+}
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

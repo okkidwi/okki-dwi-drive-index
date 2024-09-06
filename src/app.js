@@ -119,8 +119,8 @@ function init() {
       </div>
       <div class="col-lg-4 col-md-12 text-lg-end">
         <p>
-          <a href="#"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F` + window.location.host + `&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-        </p>
+          <a href="#"><img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fokkidwi.indrives.workers.dev&label=Pengunjung%20Hari%20Ini&countColor=%23263759" target="_blank" style="font-family: 'Lato', sans-serif; font-size: 16px;">
+       </p>
       </div>
 	  <script>
 		let btt = document.getElementById("back-to-top");

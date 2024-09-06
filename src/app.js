@@ -1528,7 +1528,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 			</div>
 			<div class="col-md-12">
 				<div class="text-center">
-					<p class="mb-2">Download via</p>
+					<p class="mb-2">Unduh melalui</p>
 							<i class="fas fa-bolt fa-fw"></i>Tautan Index %20</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
@@ -1639,7 +1639,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 			</div>
 			<div class="col-md-12">
 				<div class="text-center">
-					<p class="mb-2">Download via</p>
+					<p class="mb-2">Unduh melalui</p>
 					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
 							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1794,7 +1794,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, md5Checksum
 			${UI.disable_video_download ? `` : `
 			<div class="col-md-12">
 				<div class="text-center">
-					<p class="mb-2">Download via</p>
+					<p class="mb-2">Unduh melalui</p>
 					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
 							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1948,9 +1948,9 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 			${UI.disable_audio_download ? `` : `
 			<div class="col-md-12">
 				<div class="text-center">
-					<p class="mb-2">Download via</p>
+					<p class="mb-2">Unduh melalui</p>
 					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
-							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
+							<i class="fas fa-bolt fa-fw"></i>Tautan Index %20</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
 						</button>

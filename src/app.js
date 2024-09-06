@@ -97,12 +97,6 @@ function init() {
   </div>
 </div>
 
-footer {
-  padding-top: 50px; /* Memberikan ruang lebih di bagian atas footer */
-  margin-top: 50px; /* Atau bisa menggunakan margin-top */
-}
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const trakteerBtn = document.querySelector('.trakteer-btn');

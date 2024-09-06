@@ -509,7 +509,7 @@ function list(path, id = '', fallback = false) {
 			title(res['name']);
 			$('#dirname').html(res['name']);
 		}
-		$('#sharer').attr('href', 'https://kaceku.onrender.com/f/' + res['fid']);
+
 		$('#sharer').removeClass('d-none');
 		$('#list')
 			.data('nextPageToken', res['nextPageToken'])
@@ -1529,7 +1529,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 			<div class="col-md-12">
 				<div class="text-center">
 					<p class="mb-2">Unduh melalui</p>
-							<i class="fas fa-bolt fa-fw"></i>Tautan Index %20</a>
+							<i class="fas fa-bolt fa-fw"></i>Tautan Index </a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
 						</button>
@@ -1640,7 +1640,6 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 			<div class="col-md-12">
 				<div class="text-center">
 					<p class="mb-2">Unduh melalui</p>
-					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
 							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
@@ -1795,7 +1794,6 @@ function file_video(name, encoded_name, size, poster, url, mimeType, md5Checksum
 			<div class="col-md-12">
 				<div class="text-center">
 					<p class="mb-2">Unduh melalui</p>
-					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
 							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
@@ -1949,7 +1947,6 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 			<div class="col-md-12">
 				<div class="text-center">
 					<p class="mb-2">Unduh melalui</p>
-					<div class="btn-group text-center"> ${UI.display_drive_link ? ` <a class="btn btn-secondary d-flex align-items-center gap-2" href="https://kaceku.onrender.com/f/${file_id}" id="file_drive_link" target="_blank">`+gdrive_icon+`Google Drive</a>` : ``} <a href="${url}" type="button" class="btn btn-success">
 							<i class="fas fa-bolt fa-fw"></i>Tautan Index %20</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>

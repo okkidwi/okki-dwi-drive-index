@@ -393,10 +393,10 @@ function requestListPath(path, params, resultCallback, authErrorCallback, retrie
 					<div class="card-body text-center">
 					  <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>500.</b> Itu sebuah kesalahan.</div>
 					</div>
-					<p>The requested URL was not found on this server. That’s all we know.</p>
+					<p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
 					<div class="card-text text-center">
 					  <div class="btn-group text-center">
-						<a href="/" type="button" class="btn btn-success">Homepage</a>
+						<a href="/" type="button" class="btn btn-success">Beranda</a>
 					  </div>
 					</div><br>
 				  </div>`;
@@ -1396,8 +1396,8 @@ async function fallback(id, type) {
 					</div>
 					<div class="card-body text-center">
 						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu sebuah kesalahan. ` + error + `</div>
-						<p>The requested URL was not found on this server. That’s all we know.</p>
-						<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Home</a>
+						<p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
+						<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Beranda</a>
 					</div>
 				</div>`;
 				$("#content").html(content);
@@ -1466,8 +1466,8 @@ async function file(path) {
 				</div>
 				<div class="card-body text-center">
 					<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu sebuah kesalahan. ` + error + `</div>
-					<p>The requested URL was not found on this server. That’s all we know.</p>
-					<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Home</a>
+					<p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
+					<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Beranda</a>
 				</div>
 			</div>`;
 			$("#content").html(content);

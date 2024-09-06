@@ -93,10 +93,11 @@ function init() {
             <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 8px;">
               <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
             </a>
-          </div>
+            	</div>
+          	</div>
         </div>
-      </div>
-    </div>
+    </div>	
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

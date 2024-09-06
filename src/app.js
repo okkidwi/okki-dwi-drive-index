@@ -838,7 +838,7 @@ function append_files_to_fallback_list(path, files) {
 			} else if (total_files == 1) {
 				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 			} else {
-				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " files, total: " + total_size);
+				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 			}
 		}
 	} catch (e) {
@@ -849,9 +849,9 @@ function append_files_to_fallback_list(path, files) {
 /**
  * Append the data of the requested new page to the list
  * @param path
- * @param files request result
+ * @param request result
  */
-function append_files_to_list(path, files) {
+function append_files_to_list(path,) {
 	var $list = $('#list');
 	// Is it the last page of data?
 	var is_lastpage_loaded = null === $list.data('nextPageToken');
@@ -867,8 +867,8 @@ function append_files_to_list(path, files) {
 					<span>This folder is empty</span>
 				</div></div>`;
 	}
-	for (i in files) {
-		var item = files[i];
+	for (i in) {
+		var item =[i];
 		var ep = encodeURIComponent(item.name).replace(/\//g, '%2F') + '/';
 		var p = path + ep.replace(new RegExp('#', 'g'), '%23').replace(new RegExp('\\?', 'g'), '%3F');
 		item['createdTime'] = utc2jakarta(item['createdTime']);
@@ -989,7 +989,7 @@ function append_files_to_list(path, files) {
 		} else if (total_files == 1) {
 			$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 		} else {
-			$('#count').removeClass('d-none').find('.totalsize').text(total_files + " files, total: " + total_size);
+			$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 		}
 	}
 }
@@ -1219,7 +1219,7 @@ function append_search_result_to_list(files) {
 			} else if (total_files == 1) {
 				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 			} else {
-				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " files, total: " + total_size);
+				$('#count').removeClass('d-none').find('.totalsize').text(total_files + " file, total: " + total_size);
 			}
 		}
 	} catch (e) {

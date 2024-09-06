@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  </script>
       </div>
 	</div>
-</footer>`;
+</footer>;
 	$('body').html(html);
 }
 

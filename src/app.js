@@ -55,7 +55,7 @@ function init() {
         <div class="col-lg-6 col-md-12">
           	<div class="card text-white mb-3 h-100">
 				<div class="card-header">
-					<i class="fa-solid fa-mug-hot fa-fw"></i>Donate a coffee
+					<i class="fa-solid fa-gift fa-fw"></i>Support Admin dengan Donasi
 				</div>
             	<div class="card-body d-flex align-items-center justify-content-center">
 					<div class="donate btn p-0">

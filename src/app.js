@@ -290,7 +290,7 @@ function title(path) {
 	// $('title').html(document.siteName + ' - ' + path);
 	var model = window.MODEL;
 	if (model.is_search_page)
-		$('title').html(`Search: ${model.q} - ${UI.siteName}`);
+		$('title').html(`Pencarian: ${model.q} - ${UI.siteName}`);
 	else
 		$('title').html(`${drive_name}: ${path} - ${UI.siteName}`);
 }
@@ -1011,7 +1011,7 @@ function render_search_result_list() {
 		</div>
 	</div>
 	<div class="card">
-		<div class="card-header text-truncate"><i class="fas fa-search fa-fw"></i> Search: <code>${model.q}</code></div>
+		<div class="card-header text-truncate"><i class="fas fa-search fa-fw"></i> Pencarian: <code>${model.q}</code></div>
 		<div id="list" class="list-group list-group-flush text-break">
 		</div>
 		<div class="card-footer text-muted d-flex align-items-center gap-2" id="count"><span class="number badge text-bg-dark">0 item</span><span class="totalsize badge text-bg-dark"></span></div>

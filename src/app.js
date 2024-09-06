@@ -118,9 +118,9 @@ function init() {
       <a href="${UI.contact_link}" title="Please allow us up to 48 hours to process DMCA requests.">DMCA</a> ∙ <a href="${UI.contact_link}">Contact</a>
       </div>
       <div class="col-lg-4 col-md-12 text-lg-end">
-        <a href="https://www.virustotal.com/gui/url/e50a5fa98a2c85720d02b1e31e6b44d7c7925edfc38b77b09e78d705ed7814dd" target="_blank" style="font-family: 'Lato', sans-serif; font-size: 16px;">
+        <p href="https://www.virustotal.com/gui/url/e50a5fa98a2c85720d02b1e31e6b44d7c7925edfc38b77b09e78d705ed7814dd" target="_blank" style="font-family: 'Lato', sans-serif; font-size: 16px;">
           <img src="https://img.shields.io/badge/KEAMANAN%20WEBSITE-100-green"/>
-        </a>
+        </p>
       </div>
 	  <script>
 		let btt = document.getElementById("back-to-top");

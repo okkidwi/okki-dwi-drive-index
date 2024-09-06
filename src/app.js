@@ -81,27 +81,22 @@ function init() {
           </div>
         </div>
       </div>
-        <div class="col-lg-6 col-md-12">
-          	<div class="card text-white mb-3 h-100">
-            	<div class="card-header">
-              		<i class="fa-regular fa-snowflake fa-fw"></i>Sponsors
-            	</div>
-            	<div class="card-body d-flex flex-wrap gap-2 justify-content-evenly align-items-center">
-					<a href="https://akannikah.id" target="_blank" title="Akannikah.id">
-						<img class="image" alt="Akannikah.id" style="height: 32px;" src="https://kaceku.onrender.com/static/img/Akannikah.id.png">
-					</a>
-					<a href="https://merakit.co.id" target="_blank" title="Merakit Indonesia">
-						<img class="image" alt="Merakit Indonesia" src="https://kaceku.onrender.com/static/img/merakit.co.id.png">
-					</a>
-					<a href="https://eksan127.blogspot.com" target="_blank" title="Eksan127">
-						<img class="image" alt="Eksan127" src="https://kaceku.onrender.com/static/img/eksan127.png">
-					</a>
-					<a href="https://azhe.my.id" target="_blank" title="azhe403">azhe403</a>
-            	</div>
-          	</div>
+      <div class="col-lg-6 col-md-12">
+        <div class="card text-white mb-3 h-100">
+          <div class="card-header">
+            <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
+          </div>
+          <div class="card-body d-flex flex-wrap gap-2 justify-content-evenly align-items-center">
+            <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 8px;">
+              <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
+            </a>
+            <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 8px;">
+              <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
+            </a>
+          </div>
         </div>
-    </div>	
-</div>
+      </div>
+    </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

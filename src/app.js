@@ -1233,7 +1233,7 @@ function append_search_result_to_list(files) {
  */
 function onSearchResultItemClick(file_id, can_preview, file) {
 	var cur = window.current_drive_order;
-	var title = `Loading...`;
+	var title = `Memuat ...`;
 	$('#SearchModelLabel').html(title);
 	var content = `<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div>`;
 	var close_btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;

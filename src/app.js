@@ -699,7 +699,7 @@ function askPassword(path) {
  * @param path
  * @param files request result
  */
-function append_files_to_fallback_list(path, files) {
+function append_files_to_fallback_list(path, file) {
 	try {
 		console.log('append_files_to_fallback_list');
 		var $list = $('#list');
@@ -717,8 +717,8 @@ function append_files_to_fallback_list(path, files) {
 						<span>This folder is empty</span>
 					</div></div>`;
 		}
-		for (i in files) {
-			var item = files[i];
+		for (i in file) {
+			var item = file[i];
 			var p = "/fallback?id=" + item.id
 			item['createdTime'] = utc2jakarta(item['createdTime']);
 			// replace / with %2F
@@ -849,9 +849,9 @@ function append_files_to_fallback_list(path, files) {
 /**
  * Append the data of the requested new page to the list
  * @param path
- * @param request result
+ * @param files request result
  */
-function append_files_to_list(path,) {
+function append_files_to_list(path, file) {
 	var $list = $('#list');
 	// Is it the last page of data?
 	var is_lastpage_loaded = null === $list.data('nextPageToken');
@@ -867,8 +867,8 @@ function append_files_to_list(path,) {
 					<span>This folder is empty</span>
 				</div></div>`;
 	}
-	for (i in) {
-		var item =[i];
+	for (i in file) {
+		var item = file[i];
 		var ep = encodeURIComponent(item.name).replace(/\//g, '%2F') + '/';
 		var p = path + ep.replace(new RegExp('#', 'g'), '%23').replace(new RegExp('\\?', 'g'), '%3F');
 		item['createdTime'] = utc2jakarta(item['createdTime']);
@@ -1144,7 +1144,7 @@ function render_search_result_list() {
  * Append a new page of search results
  * @param files
  */
-function append_search_result_to_list(files) {
+function append_search_result_to_list(file) {
 	try {
 		var cur = window.current_drive_order || 0;
 		var $list = $('#list');
@@ -1155,8 +1155,8 @@ function append_search_result_to_list(files) {
 		html = "";
 		var totalsize = 0;
 		var is_file = false;
-		for (i in files) {
-			var item = files[i];
+		for (i in file) {
+			var item = file[i];
 			if (item['size'] == undefined) {
 				item['size'] = "";
 			}

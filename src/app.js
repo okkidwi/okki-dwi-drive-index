@@ -123,10 +123,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     saweriaBtn.addEventListener('mouseout', function() {
       saweriaQr.style.display = 'none';
+      });
     });
-  }
-});
-</script>
+  </script>
 
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">

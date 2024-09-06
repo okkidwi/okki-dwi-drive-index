@@ -515,7 +515,7 @@ function list(path, id = '', fallback = false) {
           <input class="form-check-input" style="margin-top: 0.3em;margin-right: 0.5em;" type="checkbox" id="select-all-checkboxes">
           <label class="form-check-label" for="select-all-checkboxes">Select all</label>
         </div>
-        <button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Copy</button>
+        <button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Salin</button>
       </div>
     </div>
 	<div class="card">
@@ -1007,7 +1007,7 @@ function render_search_result_list() {
 			<input class="form-check-input" style="margin-top: 0.3em;margin-right: 0.5em;" type="checkbox" id="select-all-checkboxes">
 			<label class="form-check-label" for="select-all-checkboxes">Select all</label>
 			</div>
-			<button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Copy</button>
+			<button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Salin</button>
 		</div>
 	</div>
 	<div class="card">
@@ -1480,7 +1480,7 @@ const trakteerWidget = `<div class="col-md-12">
 </div>
 </div>`;
 
-const copyButton = `<button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-primary"><span class="tooltiptext" id="myTooltip"><i class="fas fa-copy fa-fw"></i>Copy</span></button>`
+const copyButton = `<button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-primary"><span class="tooltiptext" id="myTooltip"><i class="fas fa-copy fa-fw"></i>Salin</span></button>`
 
 function generateCopyFileBox(file_id, cookie_folder_id) {
 	const copyFileBox = `<div class="row justify-content-center mt-3" id="copyresult">
@@ -2122,7 +2122,7 @@ function copyFunction() {
 
 function outFunc() {
 	var tooltip = document.getElementById("myTooltip");
-	tooltip.innerHTML = `<i class="fas fa-copy fa-fw"></i>Copy`;
+	tooltip.innerHTML = `<i class="fas fa-copy fa-fw"></i>Salin`;
 }
 
 // function to update the list of checkboxes

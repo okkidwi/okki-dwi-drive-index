@@ -110,24 +110,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
+  // Debugging to check if elements are properly selected
+  console.log(trakteerBtn, trakteerQr, saweriaBtn, saweriaQr);
+
+  // Check if the buttons and QR codes exist before adding event listeners
   if (trakteerBtn && trakteerQr && saweriaBtn && saweriaQr) {
     trakteerBtn.addEventListener('mouseover', function() {
-      trakteerQr.style.display = 'block';
-      saweriaQr.style.display = 'none';
+      console.log("Trakteer hover active");
+      trakteerQr.style.display = 'block';  // Show Trakteer QR code
+      saweriaQr.style.display = 'none';    // Hide Saweria QR code
     });
 
     trakteerBtn.addEventListener('mouseout', function() {
-      trakteerQr.style.display = 'none';
+      trakteerQr.style.display = 'none';   // Hide Trakteer QR code on mouse out
     });
 
     saweriaBtn.addEventListener('mouseover', function() {
-      saweriaQr.style.display = 'block';
-      trakteerQr.style.display = 'none';
+      console.log("Saweria hover active");
+      saweriaQr.style.display = 'block';   // Show Saweria QR code
+      trakteerQr.style.display = 'none';   // Hide Trakteer QR code
     });
 
     saweriaBtn.addEventListener('mouseout', function() {
-      saweriaQr.style.display = 'none';
+      saweriaQr.style.display = 'none';    // Hide Saweria QR code on mouse out
     });
+  } else {
+    console.error("Buttons or QR code elements are not found in the DOM.");
   }
 });
 </script>

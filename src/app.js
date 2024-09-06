@@ -1514,7 +1514,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 				</div>` : `
 				<div class="h-100 border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;">
 					<span><i class="fa-solid fa-photo-film fa-2xl fa-fw"></i></span>
-					<span>Thumbnail not available</span>
+					<span>Thumbnail tidak tersedia</span>
 				</div>`}
 			</div>
 			<div class="col-lg-8 col-md-12">
@@ -1697,7 +1697,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;
 	$('#modal-body-space').html(preview);
 	$('#modal-body-space-buttons').html(btn);
-	var no_thumb = `<div class="d-flex align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;"><span><i class="fa-solid fa-photo-film fa-2xl fa-fw"></i></span><span>Thumbnail not available</span></div>`;
+	var no_thumb = `<div class="d-flex align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;"><span><i class="fa-solid fa-photo-film fa-2xl fa-fw"></i></span><span>Thumbnail tidak tersedia</span></div>`;
 	var spinner = '<div class="d-flex justify-content-center"><div class="spinner-border m-5" role="status"><span class="sr-only"></span></div></div>';
 	$("#code_spinner").html(spinner);
 	if (bytes <= 1024 * 1024 * 2) {

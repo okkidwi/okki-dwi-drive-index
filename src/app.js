@@ -294,7 +294,7 @@ function nav(path) {
 </ul>
 <form class="d-flex" method="get" action="/${cur}:search">
 <div class="input-group">
-	<input class="form-control" name="q" type="search" placeholder="Search" aria-label="Search" value="${search_text}" style="border-right:0;" required>
+	<input class="form-control" name="q" type="search" placeholder="Cari ..." aria-label="Search" value="${search_text}" style="border-right:0;" required>
 	<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit" style="border-color: rgba(140, 130, 115, 0.13); border-left:0;"><i class="fas fa-search" style="margin: 0"></i></button>
 </div>
 </form>

@@ -1395,9 +1395,9 @@ async function fallback(id, type) {
 						<i class="fas fa-file-alt fa-fw"></i>File Information
 					</div>
 					<div class="card-body text-center">
-						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error. ` + error + `</div>
-						<p>The requested URL was not found on this server. That’s all we know.</p>
-						<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Home</a>
+						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu sebuah kesalahan. ` + error + `</div>
+						<p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
+						<a href="/" type="button" class="btn btn-success"><i class="fas fa-home fa-fw"></i>Beranda</a>
 					</div>
 				</div>`;
 				$("#content").html(content);

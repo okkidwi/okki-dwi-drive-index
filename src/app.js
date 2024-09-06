@@ -103,32 +103,34 @@ function init() {
     </div>	
 </div>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const trakteerBtn = document.querySelector('.trakteer-btn');
-      const trakteerQr = document.querySelector('.trakteer-qrcode');
-      const saweriaBtn = document.querySelector('.saweria-btn');
-      const saweriaQr = document.querySelector('.saweria-qrcode');
-  
-      trakteerBtn.addEventListener('mouseover', function() {
-        trakteerQr.style.display = 'block';
-        saweriaQr.style.display = 'none';
-      });
-  
-      trakteerBtn.addEventListener('mouseout', function() {
-        trakteerQr.style.display = 'none';
-      });
-  
-      saweriaBtn.addEventListener('mouseover', function() {
-        saweriaQr.style.display = 'block';
-        trakteerQr.style.display = 'none';
-      });
-  
-      saweriaBtn.addEventListener('mouseout', function() {
-        saweriaQr.style.display = 'none';
-      });
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const trakteerBtn = document.querySelector('.trakteer-btn');
+  const trakteerQr = document.querySelector('.trakteer-qrcode');
+  const saweriaBtn = document.querySelector('.saweria-btn');
+  const saweriaQr = document.querySelector('.saweria-qrcode');
+
+  if (trakteerBtn && trakteerQr && saweriaBtn && saweriaQr) {
+    trakteerBtn.addEventListener('mouseover', function() {
+      trakteerQr.style.display = 'block';
+      saweriaQr.style.display = 'none';
     });
-  </script>
+
+    trakteerBtn.addEventListener('mouseout', function() {
+      trakteerQr.style.display = 'none';
+    });
+
+    saweriaBtn.addEventListener('mouseover', function() {
+      saweriaQr.style.display = 'block';
+      trakteerQr.style.display = 'none';
+    });
+
+    saweriaBtn.addEventListener('mouseout', function() {
+      saweriaQr.style.display = 'none';
+    });
+  }
+});
+</script>
 
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">

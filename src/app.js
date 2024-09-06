@@ -1559,7 +1559,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 					</tbody>
 				</table>
 				<div class="input-group">
-					<span class="input-group-text" id="">Full URL</span>
+					<span class="input-group-text" id="">URL Lengkap</span>
 					<input type="text" class="form-control" id="dlurl" value="${url}" readonly> ` + copyButton + `
 				</div>
 			</div>
@@ -1670,7 +1670,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 					</tbody>
 				</table>
 				<div class="input-group">
-					<span class="input-group-text" id="">Full URL</span>
+					<span class="input-group-text" id="">URL Lengkap</span>
 					<input type="text" class="form-control" id="dlurl" value="${url}" readonly> ` + copyButton + `
 				</div>
 			</div>
@@ -1823,7 +1823,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, md5Checksum
 				</table>
 				${UI.disable_video_download ? `` : `
 				<div class="input-group">
-					<span class="input-group-text" id="">Full URL</span>
+					<span class="input-group-text" id="">URL Lengkap</span>
 					<input type="text" class="form-control" id="dlurl" value="${url}" readonly> ` + copyButton + `
 				</div>`}
 			</div>
@@ -1976,7 +1976,7 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 				</table>
 				${UI.disable_audio_download ? `` : `
 				<div class="input-group">
-					<span class="input-group-text" id="">Full URL</span>
+					<span class="input-group-text" id="">URL Lengkap</span>
 					<input type="text" class="form-control" id="dlurl" value="${url}" readonly> ` + copyButton + `
 				</div>`}
 			</div>

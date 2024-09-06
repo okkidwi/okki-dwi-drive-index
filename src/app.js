@@ -1529,7 +1529,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 			<div class="col-md-12">
 				<div class="text-center">
 					<p class="mb-2">Download via</p>
-							<i class="fas fa-bolt fa-fw"></i>Index Link</a>
+							<i class="fas fa-bolt fa-fw"></i>Tautan Index %20</a>
 						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only"></span>
 						</button>

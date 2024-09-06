@@ -831,7 +831,7 @@ function append_files_to_fallback_list(path, files) {
 			} else if (total_items == 1) {
 				$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 			} else {
-				$('#count').removeClass('d-none').find('.number').text(total_items + " items");
+				$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 			}
 			if (total_files == 0) {
 				$('#count').removeClass('d-none').find('.totalsize').text("0 file");
@@ -982,7 +982,7 @@ function append_files_to_list(path, files) {
 		} else if (total_items == 1) {
 			$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 		} else {
-			$('#count').removeClass('d-none').find('.number').text(total_items + " items");
+			$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 		}
 		if (total_files == 0) {
 			$('#count').removeClass('d-none').find('.totalsize').text("0 file");
@@ -1212,7 +1212,7 @@ function append_search_result_to_list(files) {
 			} else if (total_items == 1) {
 				$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 			} else {
-				$('#count').removeClass('d-none').find('.number').text(total_items + " items");
+				$('#count').removeClass('d-none').find('.number').text(total_items + " item");
 			}
 			if (total_files == 0) {
 				$('#count').removeClass('d-none').find('.totalsize').text("0 file");

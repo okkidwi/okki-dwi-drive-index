@@ -1263,7 +1263,7 @@ function onSearchResultItemClick(file_id, can_preview, file) {
 			<tr>
 				<th>
 					<i class="fa-solid fa-tag fa-fw"></i>
-					<span class="tth">Type</span>
+					<span class="tth">Tipe</span>
 				</th>
 				<td>${file['mimeType']}</td>
 			</tr>`;
@@ -1537,7 +1537,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 						<tr>
 							<th>
 								<i class="fa-solid fa-tag fa-fw"></i>
-								<span class="tth">Type</span>
+								<span class="tth">Tipe</span>
 							</th>
 							<td>${mimeType}</td>
 						</tr>
@@ -1648,7 +1648,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 						<tr>
 							<th>
 								<i class="fa-solid fa-tag fa-fw"></i>
-								<span class="tth">Type</span>
+								<span class="tth">Tipe</span>
 							</th>
 							<td>${mimeType}</td>
 						</tr>
@@ -1800,7 +1800,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, md5Checksum
 						<tr>
 							<th>
 								<i class="fa-solid fa-tag fa-fw"></i>
-								<span class="tth">Type</span>
+								<span class="tth">Tipe</span>
 							</th>
 							<td>${mimeType}</td>
 						</tr>
@@ -1953,7 +1953,7 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 						<tr>
 							<th>
 								<i class="fa-solid fa-tag fa-fw"></i>
-								<span class="tth">Type</span>
+								<span class="tth">Tipe</span>
 							</th>
 							<td>${mimeType}</td>
 						</tr>

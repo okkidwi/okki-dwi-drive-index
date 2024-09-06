@@ -127,13 +127,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   </script>
 
-  <div class="row g-3 mt-0">
-  <div class="col-12">
+<div class="row g-3 mt-3">
+  <div class="col-12 col-md-6" style="max-width: 80%; margin: auto;">
     <div class="card text-white mb-3 h-100">
       <div class="card-header">
         <i class="fa-regular fa-lightbulb"></i> Tentang Website
       </div>
-      <div class="card-body">
+      <div class="card-body" style="padding-top: 20px; padding-bottom: 20px;">
         <p class="card-text">Okki Dwi Drive adalah sebuah website direktori publik yang dimiliki oleh Okki Dwi. Anda dapat mengunduh berbagai aplikasi yang Anda anggap berguna. Semua berkas yang ada di website ini sudah melewati uji keamanan menggunakan Antivirus untuk menghindari dari ancaman virus yang dapat membahayakan perangkat Anda</p>
       </div>
     </div>

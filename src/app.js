@@ -2113,7 +2113,7 @@ function copyFunction() {
 	navigator.clipboard.writeText(copyText.value)
 		.then(function() {
 			var tooltip = document.getElementById("myTooltip");
-			tooltip.innerHTML = `<i class="fas fa-check fa-fw"></i>Copied`;
+			tooltip.innerHTML = `<i class="fas fa-check fa-fw"></i>Disalin`;
 		})
 		.catch(function(error) {
 			console.error("Failed to copy text: ", error);

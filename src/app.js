@@ -82,7 +82,7 @@ function init() {
         </div>
       </div>
       <div class="col-lg-6 col-md-12">
-        <div class="card text-white mb-3 h-100" style="margin-bottom: 50px;">
+        <div class="card text-white mb-3 h-100">
           <div class="card-header">
             <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
           </div>

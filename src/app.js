@@ -1239,7 +1239,7 @@ function onSearchResultItemClick(file_id, can_preview, file) {
 	var close_btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;
 	$('#modal-body-space').html(content);
 	$('#modal-body-space-buttons').html(close_btn);
-	var title = `<i class="fas fa-file-alt fa-fw"></i> File Information`;
+	var title = `<i class="fas fa-file-alt fa-fw"></i> Informasi Berkas`;
 	var p = {
 		id: file_id
 	};
@@ -1392,7 +1392,7 @@ async function fallback(id, type) {
 				var content = `
 				<div class="card">
 					<div class="card-header ${UI.file_view_alert_class}">
-						<i class="fas fa-file-alt fa-fw"></i>File Information
+						<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 					</div>
 					<div class="card-body text-center">
 						<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error. ` + error + `</div>
@@ -1462,7 +1462,7 @@ async function file(path) {
 			var content = `
 			<div class="card">
 				<div class="card-header ${UI.file_view_alert_class}">
-					<i class="fas fa-file-alt fa-fw"></i>File Information
+					<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 				</div>
 				<div class="card-body text-center">
 					<div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error. ` + error + `</div>
@@ -1500,7 +1500,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 	var content = `
 	<div class="card">
 		<div class="card-header ${UI.file_view_alert_class}">
-			<i class="fas fa-file-alt fa-fw"></i>File Information
+			<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 		</div>
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">${poster && !mimeType.startsWith('application/vnd.google-apps') ? `
@@ -1612,7 +1612,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 	var content = `
 	<div class="card">
 		<div class="card-header ${UI.file_view_alert_class}">
-			<i class="fas fa-file-alt fa-fw"></i>File Information
+			<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 		</div>
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">
@@ -1772,7 +1772,7 @@ function file_video(name, encoded_name, size, poster, url, mimeType, md5Checksum
 	var content = `
 	<div class="card">
 		<div class="card-header ${UI.file_view_alert_class}">
-			<i class="fas fa-file-alt fa-fw"></i>File Information
+			<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 		</div>
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">
@@ -1925,7 +1925,7 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 	var content = `
 	<div class="card">
 		<div class="card-header ${UI.file_view_alert_class}">
-			<i class="fas fa-file-alt fa-fw"></i>File Information
+			<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 		</div>
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">

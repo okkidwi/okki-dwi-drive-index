@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="SearchModelLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup">
           <span aria-hidden="true"></span>
         </button>
       </div>
@@ -1236,7 +1236,7 @@ function onSearchResultItemClick(file_id, can_preview, file) {
 	var title = `Memuat ...`;
 	$('#SearchModelLabel').html(title);
 	var content = `<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div>`;
-	var close_btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;
+	var close_btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>`;
 	$('#modal-body-space').html(content);
 	$('#modal-body-space-buttons').html(close_btn);
 	var title = `<i class="fas fa-file-alt fa-fw"></i> Informasi Berkas`;
@@ -1583,7 +1583,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 	$('#content').html(content);
 	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Preview');
 	var preview = `<img class="w-100 rounded" src="${poster}" alt="Preview of ${name}" title="Preview of ${name}">`;
-	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;
+	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>`;
 	$('#modal-body-space').html(preview);
 	$('#modal-body-space-buttons').html(btn);
 	if (poster && !mimeType.startsWith('application/vnd.google-apps')) {
@@ -1694,7 +1694,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 	$("#content").html(content);
 	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Preview');
 	var preview = `<img class="w-100 rounded" src="${poster}" alt="Preview of ${name}" title="Preview of ${name}">`;
-	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>`;
+	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>`;
 	$('#modal-body-space').html(preview);
 	$('#modal-body-space-buttons').html(btn);
 	var no_thumb = `<div class="d-flex align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;"><span><i class="fa-solid fa-photo-film fa-2xl fa-fw"></i></span><span>Thumbnail tidak tersedia</span></div>`;

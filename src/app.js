@@ -91,6 +91,81 @@ function init() {
     </div>	
 </div>
 
+<div class="row g-3 mt-0">
+      <div class="col-lg-6 col-md-12">
+        <div class="card text-white mb-3 h-100">
+          <div class="card-header">
+            <i class="fa-solid fa-gift fa-fw"></i> Support Admin dengan Donasi
+          </div>
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <div class="donate btn-group p-0">
+              <div class="donate btn p-0 me-4">
+                <a class="btn trakteer-btn" href="https://trakteer.id/okkidwi/tip" title="Klik saya!" style="background: #BE1E2D;" target="_blank">
+                  <i class="fab fa-paypal"></i> Trakteer
+                </a>
+                <div class="qrcode card trakteer-qrcode" style="padding: 1rem; display: none;">
+                  <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
+                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/love.png">
+                </div>
+              </div>
+              <div class="donate btn p-0">
+                <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
+                  <i class="fab fa-paypal"></i> Saweria
+                </a>
+                <div class="qrcode card saweria-qrcode" style="padding: 1rem; display: none;">
+                  <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
+                  <img alt="Love 2" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/love-2.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-6 col-md-12">
+        <div class="card text-white mb-3 h-100">
+          <div class="card-header">
+            <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
+          </div>
+          <div class="card-body d-flex flex-wrap gap-2 justify-content-center align-items-center">
+            <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 8px;">
+              <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
+            </a>
+            <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 8px;">
+              <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const trakteerBtn = document.querySelector('.trakteer-btn');
+      const trakteerQr = document.querySelector('.trakteer-qrcode');
+      const saweriaBtn = document.querySelector('.saweria-btn');
+      const saweriaQr = document.querySelector('.saweria-qrcode');
+  
+      trakteerBtn.addEventListener('mouseover', function() {
+        trakteerQr.style.display = 'block';
+        saweriaQr.style.display = 'none';
+      });
+  
+      trakteerBtn.addEventListener('mouseout', function() {
+        trakteerQr.style.display = 'none';
+});
+
+  saweriaBtn.addEventListener('mouseover', function() {
+    saweriaQr.style.display = 'block';
+    trakteerQr.style.display = 'none';
+  });
+
+  saweriaBtn.addEventListener('mouseout', function() {
+    saweriaQr.style.display = 'none';
+  });
+});
+ </script>
+
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
     <div class="modal-content">

@@ -55,7 +55,7 @@ function init() {
         <div class="col-lg-6 col-md-12">
           	<div class="card text-white mb-3 h-100">
 				<div class="card-header">
-					<i class="fa-solid fa-gift fa-fw"></i>Support Admin dengan Donasi
+					<i class="fa-solid fa-mug-hot fa-fw"></i>Donate a coffee
 				</div>
             	<div class="card-body d-flex align-items-center justify-content-center">
 					<div class="donate btn p-0">
@@ -63,12 +63,13 @@ function init() {
 						<i class="fab fa-paypal"></i>Trakteer </a>
 						<div class="qrcode card" style="padding: 1rem 1rem 0 1rem;">
 							<div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-							<img alt="Love" src="https://raw.githubusercontent.com/okkidwi/google-drive-index-v2/master/images/love.png">
+							<img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/love.png">
 						</div>
 					</div>
             	</div>
         	</div>
-	        <div class="col-lg-6 col-md-12">
+        </div>
+        <div class="col-lg-6 col-md-12">
           	<div class="card text-white mb-3 h-100">
             	<div class="card-header">
               		<i class="fa-regular fa-snowflake fa-fw"></i>Sponsors
@@ -84,6 +85,7 @@ function init() {
 						<img class="image" alt="Eksan127" src="https://kaceku.onrender.com/static/img/eksan127.png">
 					</a>
 					<a href="https://azhe.my.id" target="_blank" title="azhe403">azhe403</a>
+            	</div>
           	</div>
         </div>
     </div>	

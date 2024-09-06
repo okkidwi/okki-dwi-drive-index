@@ -81,26 +81,21 @@ function init() {
           </div>
         </div>
       </div>
-        <div class="col-lg-6 col-md-12">
-          	<div class="card text-white mb-3 h-100">
-            	<div class="card-header">
-              		<i class="fa-regular fa-snowflake fa-fw"></i>Sponsors
-            	</div>
-            	<div class="card-body d-flex flex-wrap gap-2 justify-content-evenly align-items-center">
-					<a href="https://akannikah.id" target="_blank" title="Akannikah.id">
-						<img class="image" alt="Akannikah.id" style="height: 32px;" src="https://kaceku.onrender.com/static/img/Akannikah.id.png">
-					</a>
-					<a href="https://merakit.co.id" target="_blank" title="Merakit Indonesia">
-						<img class="image" alt="Merakit Indonesia" src="https://kaceku.onrender.com/static/img/merakit.co.id.png">
-					</a>
-					<a href="https://eksan127.blogspot.com" target="_blank" title="Eksan127">
-						<img class="image" alt="Eksan127" src="https://kaceku.onrender.com/static/img/eksan127.png">
-					</a>
-					<a href="https://azhe.my.id" target="_blank" title="azhe403">azhe403</a>
-            	</div>
-          	</div>
-        </div>
-    </div>	
+  <div class="col-lg-6 col-md-12">
+    <div class="card text-white mb-3 h-100">
+      <div class="card-header">
+        <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
+      </div>
+      <div class="card-body d-flex flex-wrap gap-2 justify-content-center align-items-center">
+        <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" class="social-link">
+          <img class="image" alt="Facebook" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
+        </a>
+        <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" class="social-link">
+          <img class="image" alt="Telegram" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -110,32 +105,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  // Debugging to check if elements are properly selected
-  console.log(trakteerBtn, trakteerQr, saweriaBtn, saweriaQr);
-
-  // Check if the buttons and QR codes exist before adding event listeners
   if (trakteerBtn && trakteerQr && saweriaBtn && saweriaQr) {
     trakteerBtn.addEventListener('mouseover', function() {
-      console.log("Trakteer hover active");
-      trakteerQr.style.display = 'block';  // Show Trakteer QR code
-      saweriaQr.style.display = 'none';    // Hide Saweria QR code
+      trakteerQr.style.display = 'block';
+      saweriaQr.style.display = 'none';
     });
 
     trakteerBtn.addEventListener('mouseout', function() {
-      trakteerQr.style.display = 'none';   // Hide Trakteer QR code on mouse out
+      trakteerQr.style.display = 'none';
     });
 
     saweriaBtn.addEventListener('mouseover', function() {
-      console.log("Saweria hover active");
-      saweriaQr.style.display = 'block';   // Show Saweria QR code
-      trakteerQr.style.display = 'none';   // Hide Trakteer QR code
+      saweriaQr.style.display = 'block';
+      trakteerQr.style.display = 'none';
     });
 
     saweriaBtn.addEventListener('mouseout', function() {
-      saweriaQr.style.display = 'none';    // Hide Saweria QR code on mouse out
+      saweriaQr.style.display = 'none';
     });
-  } else {
-    console.error("Buttons or QR code elements are not found in the DOM.");
   }
 });
 </script>

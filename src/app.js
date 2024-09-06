@@ -1500,7 +1500,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 	var content = `
 	<div class="card">
 		<div class="card-header ${UI.file_view_alert_class}">
-			<i class="fas fa-file-alt fa-fw"></i>File Information
+			<i class="fas fa-file-alt fa-fw"></i>Informasi Berkas
 		</div>
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">${poster && !mimeType.startsWith('application/vnd.google-apps') ? `
@@ -1508,13 +1508,13 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 					<div id="preview_spinner" class="spinner-border m-5" role="status"><span class="sr-only"></span></div>
 					<div id="overlay" class="overlay border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5; opacity: 0;">
 						<span><i class="fas fa-search-plus fa-2xl fa-fw"></i></span>
-						<span>Preview</span>
-						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail of ${name}"></a>
+						<span>Pratinjau</span>
+						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail dari ${name}"></a>
 					</div>
 				</div>` : `
 				<div class="h-100 border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;">
 					<span><i class="fa-solid fa-photo-film fa-2xl fa-fw"></i></span>
-					<span>Thumbnail not available</span>
+					<span>Thumbnail tidak tersedia</span>
 				</div>`}
 			</div>
 			<div class="col-lg-8 col-md-12">
@@ -1523,28 +1523,28 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 						<tr>
 							<th>
 								<i class="fa-regular fa-folder-closed fa-fw"></i>
-								<span class="tth">Name</span>
+								<span class="tth">Nama</span>
 							</th>
 							<td>${name}</td>
 						</tr>
 						<tr>
 							<th>
 								<i class="fa-regular fa-clock fa-fw"></i>
-								<span class="tth">Datetime</span>
+								<span class="tth">Tanggal & Waktu</span>
 							</th>
 							<td>${createdTime}</td>
 						</tr>
 						<tr>
 							<th>
 								<i class="fa-solid fa-tag fa-fw"></i>
-								<span class="tth">Type</span>
+								<span class="tth">Tipe</span>
 							</th>
 							<td>${mimeType}</td>
 						</tr>
 						<tr>
 							<th>
 								<i class="fa-solid fa-box-archive fa-fw"></i>
-								<span class="tth">Size</span>
+								<span class="tth">Ukuran</span>
 							</th>
 							<td>${size}</td>
 						</tr>
@@ -1559,7 +1559,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 					</tbody>
 				</table>
 				<div class="input-group">
-					<span class="input-group-text" id="">Full URL</span>
+					<span class="input-group-text" id="">URL Lengkap</span>
 					<input type="text" class="form-control" id="dlurl" value="${url}" readonly> ` + copyButton + `
 				</div>
 			</div>

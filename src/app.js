@@ -404,7 +404,7 @@ function requestListPath(path, params, resultCallback, authErrorCallback, retrie
 					return 500
 				}
 				if (!response.ok) {
-					throw new Error('Permintaan gagal');
+					throw new Error('Request failed');
 				}
 				return response.json();
 			})
@@ -462,7 +462,7 @@ function requestSearch(params, resultCallback, retries = 3) {
 			})
 			.then(function(response) {
 				if (!response.ok) {
-					throw new Error('Permintaan gagal');
+					throw new Error('Request failed');
 				}
 				return response.json();
 			})
@@ -1300,7 +1300,7 @@ function onSearchResultItemClick(file_id, can_preview, file) {
 			if (response.ok) {
 				return response.json();
 			} else {
-				throw new Error('Permintaan gagal.');
+				throw new Error('Request failed.');
 			}
 		})
 		.then(function(obj) {
@@ -1352,7 +1352,7 @@ async function fallback(id, type) {
 			})
 			.then(function(response) {
 				if (!response.ok) {
-					throw new Error("Permintaan gagal");
+					throw new Error("Request failed");
 				}
 				return response.json();
 			})
@@ -1423,7 +1423,7 @@ async function file(path) {
 		})
 		.then(function(response) {
 			if (!response.ok) {
-				throw new Error("Permintaan gagal");
+				throw new Error("Request failed");
 			}
 			return response.json();
 		})

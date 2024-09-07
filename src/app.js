@@ -1509,7 +1509,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 					<div id="overlay" class="overlay border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5; opacity: 0;">
 						<span><i class="fas fa-search-plus fa-2xl fa-fw"></i></span>
 						<span>Pratinjau</span>
-						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail of ${name}"></a>
+						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail dari ${name}"></a>
 					</div>
 				</div>` : `
 				<div class="h-100 border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5;">
@@ -1624,7 +1624,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 					<div id="overlay" class="overlay border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5; opacity: 0;">
 						<span><i class="fas fa-search-plus fa-2xl fa-fw"></i></span>
 						<span>Pratinjau</span>
-						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail of ${name}"></a>
+						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail dari ${name}"></a>
 					</div>` : ``}
 				</div>
 			</div>
@@ -1930,7 +1930,7 @@ function file_audio(name, encoded_name, size, url, mimeType, md5Checksum, create
 		<div class="card-body row g-3">
 			<div class="col-lg-4 col-md-12">
 				<div class="h-100 border border-dark rounded" style="--bs-border-opacity: .5;">
-					${UI.disable_player ? `<img class="object-fit-cover w-100 h-100 img-fluid rounded" src="${UI.audioposter}" alt="Thumbnail of ${name}" title="Thumbnail of ${name}">` : player}
+					${UI.disable_player ? `<img class="object-fit-cover w-100 h-100 img-fluid rounded" src="${UI.audioposter}" alt="Thumbnail dari ${name}" title="Thumbnail dari ${name}">` : player}
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-12">

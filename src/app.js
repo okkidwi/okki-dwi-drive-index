@@ -1508,7 +1508,7 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 					<div id="preview_spinner" class="spinner-border m-5" role="status"><span class="sr-only"></span></div>
 					<div id="overlay" class="overlay border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5; opacity: 0;">
 						<span><i class="fas fa-search-plus fa-2xl fa-fw"></i></span>
-						<span>Preview</span>
+						<span>Pratinjau</span>
 						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail of ${name}"></a>
 					</div>
 				</div>` : `
@@ -1581,8 +1581,8 @@ function file_others(name, encoded_name, size, poster, url, mimeType, md5Checksu
 		</div>
 	</div>`;
 	$('#content').html(content);
-	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Preview');
-	var preview = `<img class="w-100 rounded" src="${poster}" alt="Preview of ${name}" title="Preview of ${name}">`;
+	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Pratinjau');
+	var preview = `<img class="w-100 rounded" src="${poster}" alt="Pratinjau dari ${name}" title="Pratinjau dari ${name}">`;
 	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>`;
 	$('#modal-body-space').html(preview);
 	$('#modal-body-space-buttons').html(btn);
@@ -1623,7 +1623,7 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 					${bytes >= 1024 * 1024 * 2 && poster ? `
 					<div id="overlay" class="overlay border border-dark rounded d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4" style="--bs-border-opacity: .5; opacity: 0;">
 						<span><i class="fas fa-search-plus fa-2xl fa-fw"></i></span>
-						<span>Preview</span>
+						<span>Pratinjau</span>
 						<a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#SearchModel" title="Thumbnail of ${name}"></a>
 					</div>` : ``}
 				</div>
@@ -1692,8 +1692,8 @@ function file_code(name, encoded_name, size, bytes, poster, url, mimeType, md5Ch
 		</div>
 	</div>`;
 	$("#content").html(content);
-	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Preview');
-	var preview = `<img class="w-100 rounded" src="${poster}" alt="Preview of ${name}" title="Preview of ${name}">`;
+	$('#SearchModelLabel').html('<i class="fa-regular fa-eye fa-fw"></i>Pratinjau');
+	var preview = `<img class="w-100 rounded" src="${poster}" alt="Pratinjau dari ${name}" title="Pratinjau dari ${name}">`;
 	var btn = `<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>`;
 	$('#modal-body-space').html(preview);
 	$('#modal-body-space-buttons').html(btn);

@@ -127,6 +127,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   </script>
 
+const tentangWebsiteHtml = `
+  <div class="row g-3 mt-0">
+    <div class="col-12">
+      <div class="card text-white mb-3 h-100">
+        <div class="card-header">
+          <i class="fa-regular fa-lightbulb"></i> Tentang Website
+        </div>
+        <div class="card-body">
+          <p class="card-text">Okki Dwi Drive adalah sebuah website direktori publik yang dimiliki oleh Okki Dwi. Anda dapat mengunduh berbagai aplikasi yang Anda anggap berguna. Semua berkas yang ada di website ini sudah melewati uji keamanan menggunakan Antivirus untuk menghindari dari ancaman virus yang dapat membahayakan perangkat Anda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+document.getElementById('modal-body-space').innerHTML += tentangWebsiteHtml;
+
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
     <div class="modal-content">
@@ -144,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 <button id="back-to-top" class="btn btn-secondary btn-lg back-to-top shadow border border-light" style="--bs-border-opacity: .4;" role="button"><i class="fas fa-chevron-up m-0"></i></button>
-<script type='text/javascript' src='https://assets.trakteer.id/js/trbtn-overlay.min.js'></script><script type='text/javascript' class='troverlay'>(function() {var trbtnId = trbtnOverlay.init('Donasi','#be1e2d','https://trakteer.id/okkidwi/tip/embed/modal','https://cdn.trakteer.id/images/mix/cendol.png','40','floating-left');trbtnOverlay.draw(trbtnId);})();</script>
+<script type='text/javascript' class='troverlay'>(function() {var trbtnId = trbtnOverlay.init('Donasi','#be1e2d','https://trakteer.id/okkidwi/tip/embed/modal','https://cdn.trakteer.id/images/mix/cendol.png','40','floating-left');trbtnOverlay.draw(trbtnId);})();</script>
 <footer class="footer text-center mt-auto container ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed;': ''} ${UI.hide_footer ? ' display:none;': ' display:block;'}">
     <div class="container" style="padding-top: 15px;">
       <div class="row">

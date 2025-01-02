@@ -374,7 +374,7 @@ function requestListPath(path, params, resultCallback, authErrorCallback, retrie
 		page_index: params['page_index'] || 0
 	};
 	$('#update').show();
-	document.getElementById('update').innerHTML = `<div class='alert alert-info' role='alert'> Mengubungkan ...</div></div></div>`;
+	document.getElementById('update').innerHTML = `<div class='alert alert-info' role='alert'> Menghubungkan ...</div></div></div>`;
 	if (fallback) {
 		path = "/0:fallback"
 	}
@@ -490,7 +490,7 @@ function requestSearch(params, resultCallback, retries = 3) {
 			});
 	}
 
-	$('#update').html(`<div class='alert alert-info' role='alert'> Mengubungkan ...</div></div></div>`);
+	$('#update').html(`<div class='alert alert-info' role='alert'> Menghubungkan ...</div></div></div>`);
 	performRequest(retries);
 }
 
@@ -513,7 +513,7 @@ function list(path, id = '', fallback = false) {
       <div class="d-flex align-items-center justify-content-between">
         <div class="form-check mr-3">
           <input class="form-check-input" style="margin-top: 0.3em;margin-right: 0.5em;" type="checkbox" id="select-all-checkboxes">
-          <label class="form-check-label" for="select-all-checkboxes">Select all</label>
+          <label class="form-check-label" for="select-all-checkboxes">Pilih Semua</label>
         </div>
         <button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Salin</button>
       </div>
@@ -1005,7 +1005,7 @@ function render_search_result_list() {
 		<div class="d-flex align-items-center justify-content-between">
 			<div class="form-check mr-3">
 			<input class="form-check-input" style="margin-top: 0.3em;margin-right: 0.5em;" type="checkbox" id="select-all-checkboxes">
-			<label class="form-check-label" for="select-all-checkboxes">Select all</label>
+			<label class="form-check-label" for="select-all-checkboxes">Pilih Semua</label>
 			</div>
 			<button id="handle-multiple-items-copy" style="padding: 5px 10px; font-size: 12px;" class="btn btn-success">Salin</button>
 		</div>

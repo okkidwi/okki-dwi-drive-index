@@ -137,6 +137,23 @@ document.addEventListener('DOMContentLoaded', function() {
         <p class="card-text">Okki Dwi Drive adalah sebuah website direktori publik yang dimiliki oleh Okki Dwi. Anda dapat mengunduh berbagai aplikasi yang Anda anggap berguna. Semua berkas yang ada di website ini sudah melewati uji keamanan menggunakan Antivirus untuk menghindari dari ancaman virus yang dapat membahayakan perangkat Anda</p>
       </div>
     </div>
+	</div>
+ </div>
+
+<style>
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .card-header {
+    padding: 10px 15px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+</style>
 
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">

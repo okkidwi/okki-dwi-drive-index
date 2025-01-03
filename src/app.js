@@ -84,14 +84,14 @@ function init() {
 			<div class="col-lg-6 col-md-12">
 			  <div class="card text-white mb-3 h-100">
 			    <div class="card-header">
-			      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official
+			      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official & Sponsor
 			    </div>
 			    <div class="card-body d-flex flex-wrap gap-1 justify-content-center align-items-center">
 			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 10px;">
 			        <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
 			      </a>
-			      <a href="https://t.me/revancedindo" target="_blank" title="Yuk gabung sekarang!" style="margin-left: 10px;">
-			        <img class="image" alt="Telegram" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/telegram.png">
+			      <a href="https://yoviratv.blogspot.com" target="_blank" title="Unduh sekarang!" style="margin-left: 10px;">
+			        <img class="image" alt="Yovira TV" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/yovira-tv.png">
 			      </a>
             </div>
           </div>

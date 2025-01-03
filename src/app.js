@@ -56,18 +56,18 @@ function init() {
           <div class="card-header">
             <i class="fa-solid fa-gift fa-fw"></i> Support Admin dengan Donasi
           </div>
-          <div class="card-body d-flex align-items-center justify-content-center">
-            <div class="donate btn-group p-0">
-              <div class="donate btn p-0 me-4">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <div class="donate btn-group">
+              <div class="donate btn me-4">
                 <a class="btn trakteer-btn" href="https://trakteer.id/okkidwi/tip" title="Klik saya!" style="background: #BE1E2D;" target="_blank">
                   <i class="fab fa-paypal"></i> Trakteer
                 </a>
                 <div class="qrcode card trakteer-qrcode" style="padding: 1rem; display: none;">
                   <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-2.png">
+                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love.png">
                 </div>
               </div>
-              <div class="donate btn p-0">
+              <div class="donate btn">
                 <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
                   <i class="fab fa-paypal"></i> Saweria
                 </a>

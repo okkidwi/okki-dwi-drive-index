@@ -87,7 +87,7 @@ function init() {
 			      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official & Sponsor
 			    </div>
 			    <div class="card-body d-flex flex-wrap gap-1 justify-content-center align-items-center">
-			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Yuk gabung sekarang!" style="margin-right: 10px;">
+			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Gabung sekarang!" style="margin-right: 10px;">
 			        <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/facebook.png">
 			      </a>
 			      <a href="https://yoviratv.blogspot.com" target="_blank" title="Unduh sekarang!" style="margin-left: 10px;">

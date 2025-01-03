@@ -57,24 +57,24 @@ function init() {
           <div class="card-header">
             <i class="fa-solid fa-gift fa-fw"></i> Support Admin dengan Donasi
           </div>
-          <div class="card-body d-flex align-items-center justify-content-center">
-            <div class="donate btn-group p-0">
-              <div class="donate btn p-0 me-4">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <div class="donate btn-group">
+              <div class="donate btn me-4">
                 <a class="btn trakteer-btn" href="https://trakteer.id/okkidwi/tip" title="Klik saya!" style="background: #BE1E2D;" target="_blank">
                   <i class="fab fa-paypal"></i> Trakteer
                 </a>
                 <div class="qrcode card trakteer-qrcode" style="padding: 1rem; display: none;">
                   <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/love.png">
+                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love.png">
                 </div>
               </div>
-              <div class="donate btn p-0">
+              <div class="donate btn">
                 <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
                   <i class="fab fa-paypal"></i> Saweria
                 </a>
                 <div class="qrcode card saweria-qrcode" style="padding: 1rem; display: none;">
                   <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-                  <img alt="Love 2" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/love-2.png">
+                  <img alt="Love 2" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-2.png">
                 </div>
               </div>
             </div>
@@ -86,23 +86,23 @@ function init() {
           </div>
         </div>
       </div>
-			<div class="col-lg-6 col-md-12">
-			  <div class="card text-white mb-3 h-100">
-			    <div class="card-header">
-			      <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official & Sponsor
-			    </div>
-			    <div class="card-body d-flex flex-wrap gap-1 justify-content-center align-items-center">
-			      <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Gabung sekarang!" style="margin-right: 10px;">
-			        <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/logo-facebook.png">
-			      </a>
-			      <a href="https://yoviratv.blogspot.com" target="_blank" title="Unduh sekarang!" style="margin-left: 10px;">
-			        <img class="image" alt="Yovira TV" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive/master/images/logo-yovira-tv.png">
-			      </a>
-            </div>
+    
+      <div class="col-lg-6 col-md-12">
+        <div class="card text-white mb-3 h-100">
+          <div class="card-header">
+            <i class="fa-regular fa-snowflake fa-fw"></i> Grup Official & Sponsor
+          </div>
+          <div class="card-body d-flex flex-wrap gap-1 justify-content-center align-items-center">
+            <a href="https://www.facebook.com/groups/153401064271807t" target="_blank" title="Gabung sekarang!" style="margin-right: 22px;">
+              <img class="image" alt="Facebook" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/logo-facebook.png">
+            </a>
+            <a href="https://yoviratv.blogspot.com" target="_blank" title="Unduh sekarang!" style="margin-left: 22px;">
+              <img class="image" alt="Yovira TV" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/logo-yovira-tv.png">
+            </a>
           </div>
         </div>
-    	</div>	
-	</div>
+      </div>
+    </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

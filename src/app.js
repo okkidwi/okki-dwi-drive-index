@@ -96,12 +96,28 @@ function init() {
 			      </a>
 			      <a href="https://yoviratv.blogspot.com" target="_blank" title="Unduh sekarang!" style="margin-left: 22px;">
 			        <img class="image" alt="Yovira TV" style="height: 33px;" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/logo-yovira-tv.png">
-			      </a>
-            </div>
-          </div>
+          </a>
         </div>
-    	</div>	
-	</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3 mt-0">
+    <div class="col-12">
+      <div class="card text-white mb-3 h-100">
+        <div class="card-header">
+          <i class="fa-regular fa-lightbulb"></i> Tentang Website
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Okki Dwi Drive adalah sebuah website direktori publik yang dimiliki oleh Okki Dwi. Anda dapat mengunduh berbagai aplikasi yang Anda anggap berguna. 
+            Semua berkas yang ada di website ini sudah melewati uji keamanan menggunakan Antivirus untuk menghindari ancaman virus yang dapat membahayakan perangkat Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -130,22 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   </script>
-
-<div class="row g-3 mt-0">
-  <div class="col-12">
-    <div class="card text-white mb-3 h-100">
-      <div class="card-header">
-        <i class="fa-regular fa-lightbulb"></i> Tentang Website
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          Okki Dwi Drive adalah sebuah website direktori publik yang dimiliki oleh Okki Dwi. Anda dapat mengunduh berbagai aplikasi yang Anda anggap berguna. 
-          Semua berkas yang ada di website ini sudah melewati uji keamanan menggunakan Antivirus untuk menghindari ancaman virus yang dapat membahayakan perangkat Anda.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">

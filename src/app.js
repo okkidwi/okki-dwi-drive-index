@@ -78,9 +78,9 @@ function init() {
               </div>
             </div>
             <div class="text-center mt-1">
-            <i class="fab fa-paypal"></i> Trakteer - GRATIS KONTEN PREMIUM (Cek Community Post)
+            <i class="fab fa-paypal"></i> Trakteer - Gratis konten Premium (Cek Community Post)
             <br>
-            <i class="fab fa-paypal"></i> Saweria - Hubungi Admin via <a href="https://www.facebook.com/okkidwi27" target="_blank">FACEBOOK</a> untuk mendapatkan akses yang sama
+            <i class="fab fa-paypal"></i> Saweria - Hubungi Admin via <a href="https://www.facebook.com/okkidwi27" target="_blank">Facebook</a> untuk mendapatkan akses yang sama
             </div>
           </div>
         </div>

@@ -86,7 +86,7 @@ function init() {
           </div>
         </div>
       </div>
-			</div>
+		</div>
     
       <div class="col-lg-6 col-md-12">
         <div class="card text-white mb-3 h-100">

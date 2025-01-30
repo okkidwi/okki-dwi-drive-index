@@ -1062,17 +1062,9 @@ function render_search_result_list() {
 	<div id="readme_md" style="display:none; padding: 20px 20px;"></div>`;
 	$('#content').html(content);
 
-	 ```html
- <div class="tako-running-text" style="margin-top: 35px;">
-    <div class="card" style="padding: 0 0 0.3rem 0; border-radius: .5rem; width: 100%; overflow: hidden; background-color: #37A2EA;">
-      <iframe src="https://tako.id/overlay/running-text?overlay_key=cht6eaeash0yhgmcf3n9zshz" 
-          height="72px" 
-          width="100%" 
-          style="border: none; color-scheme: light;">
-      </iframe
-   </iframe>
- </div>
- ```
+`+takoWidget;
+		if (!window.location.href.toLowerCase().includes(':search?q=') && window.location.pathname.toLowerCase() !== '/fallback') {
+			html += `
 
 	$('#list').html(`<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div></div>`);
 	$('#readme_md').hide().html('');
@@ -1536,6 +1528,16 @@ const trakteerWidget = `<div class="col-md-12">
     width="100%" 
     style="border: none; color-scheme: light;">
   </iframe>
+</div>
+</div>`;
+
+const takoWidget = `<div class="col-md-12" style="margin-top: 35px;">
+<div class="card" style="padding: 0 0 0.3rem 0; border-radius: .5rem; width: 100%; overflow: hidden; background-color: #37A2EA;">
+	<iframe src="https://tako.id/overlay/running-text?overlay_key=cht6eaeash0yhgmcf3n9zshz" 
+		height="72px" 
+		width="100%" 
+		style="border: none; color-scheme: light;">
+	</iframe>
 </div>
 </div>`;
 

@@ -57,30 +57,39 @@ function init() {
             <i class="fa-solid fa-gift fa-fw"></i> Support Admin dengan Donasi
           </div>
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <div class="donate btn-group">
-              <div class="donate btn me-4">
-                <a class="btn trakteer-btn" href="https://trakteer.id/okkidwi/tip" title="Klik saya!" style="background: #BE1E2D;" target="_blank">
-                  <i class="fab fa-paypal"></i> Trakteer
-                </a>
-                <div class="qrcode card trakteer-qrcode" style="padding: 1rem; display: none;">
-                  <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-                  <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love.png">
-                </div>
-              </div>
-              <div class="donate btn">
-                <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
-                  <i class="fab fa-paypal"></i> Saweria
-                </a>
-                <div class="qrcode card saweria-qrcode" style="padding: 1rem; display: none;">
-                  <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-                  <img alt="Love 2" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-2.png">
-                </div>
-              </div>
+          <div class="donate btn-group">
+          <div class="donate btn me-4">
+            <a class="btn trakteer-btn" href="https://trakteer.id/okkidwi/tip" title="Klik saya!" style="background: #BE1E2D;" target="_blank">
+              <i class="fab fa-paypal"></i> Trakteer
+            </a>
+            <div class="qrcode card trakteer-qrcode" style="padding: 1rem; display: none;">
+              <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
+              <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love.png">
             </div>
+          </div>
+          <div class="donate btn me-4">
+            <a class="btn tako-btn" href="https://tako.id/okkidwi" title="Klik saya!" style="background: #37A2EA;" target="_blank">
+              <i class="fab fa-paypal"></i> Tako
+            </a>
+            <div class="qrcode card tako-qrcode" style="padding: 1rem; display: none;">
+              <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
+              <img alt="Love 3" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-3.png">
+            </div>
+          </div>
+          <div class="donate btn">
+            <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
+              <i class="fab fa-paypal"></i> Saweria
+            </a>
+            <div class="qrcode card saweria-qrcode" style="padding: 1rem; display: none;">
+              <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
+              <img alt="Love 2" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-2.png">
+            </div>
+          </div>
+        </div>
             <div class="text-center mt-1">
             <i class="fab fa-paypal"></i> Trakteer - Gratis konten Premium (Cek Community Post)
             <br>
-            <i class="fab fa-paypal"></i> Saweria - Hubungi Admin via <a href="https://www.facebook.com/okkidwi27" target="_blank">Facebook</a> untuk mendapatkan akses yang sama
+            <i class="fab fa-paypal"></i> Tako & Saweria - Hubungi Admin via <a href="https://www.facebook.com/okkidwi27" target="_blank">Facebook</a> untuk mendapatkan akses yang sama
             </div>
           </div>
         </div>
@@ -121,30 +130,43 @@ function init() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  const takoBtn = document.querySelector('.tako-btn');
+  const takoQr = document.querySelector('.tako-qrcode');
   const trakteerBtn = document.querySelector('.trakteer-btn');
   const trakteerQr = document.querySelector('.trakteer-qrcode');
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  if (trakteerBtn && trakteerQr && saweriaBtn && saweriaQr) {
-    trakteerBtn.addEventListener('mouseover', function() {
-      trakteerQr.style.display = 'block';
-      saweriaQr.style.display = 'none';
-    });
+  takoBtn.addEventListener('mouseover', function() {
+    takoQr.style.display = 'block';
+    trakteerQr.style.display = 'none';
+    saweriaQr.style.display = 'none';
+  });
 
-    trakteerBtn.addEventListener('mouseout', function() {
-      trakteerQr.style.display = 'none';
-    });
+  takoBtn.addEventListener('mouseout', function() {
+    takoQr.style.display = 'none';
+  });
 
-    saweriaBtn.addEventListener('mouseover', function() {
-      saweriaQr.style.display = 'block';
-      trakteerQr.style.display = 'none';
-    });
+  trakteerBtn.addEventListener('mouseover', function() {
+    trakteerQr.style.display = 'block';
+    takoQr.style.display = 'none';
+    saweriaQr.style.display = 'none';
+  });
 
-    saweriaBtn.addEventListener('mouseout', function() {
-      saweriaQr.style.display = 'none';
-      });
-    });
+  trakteerBtn.addEventListener('mouseout', function() {
+    trakteerQr.style.display = 'none';
+  });
+
+  saweriaBtn.addEventListener('mouseover', function() {
+    saweriaQr.style.display = 'block';
+    trakteerQr.style.display = 'none';
+    takoQr.style.display = 'none';
+  });
+
+  saweriaBtn.addEventListener('mouseout', function() {
+    saweriaQr.style.display = 'none';
+  });
+});
   </script>
 
 <div class="modal fade" id="SearchModel" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">

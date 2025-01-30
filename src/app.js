@@ -137,6 +137,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
+  // Get all the donate divs
+  const donateDivs = document.querySelectorAll('.donate.btn');
+
   // Function to hide all QR codes
   function hideAllQRCodes() {
     takoQr.style.display = 'none';
@@ -144,45 +147,19 @@ document.addEventListener('DOMContentLoaded', function() {
     saweriaQr.style.display = 'none';
   }
 
-  // Function to show a specific QR code and hide others
-  function showQRCode(qrCode) {
-    hideAllQRCodes();
-    qrCode.style.display = 'block';
-  }
+  // Add event listeners to each donate div
+  donateDivs.forEach(donateDiv => {
+    const button = donateDiv.querySelector('.btn');
+    const qrCode = donateDiv.querySelector('.qrcode');
 
-  // Attach mouseover and mouseout listeners to buttons
-  takoBtn.addEventListener('mouseover', function() {
-    showQRCode(takoQr);
-  });
+    donateDiv.addEventListener('mouseover', function() {
+      hideAllQRCodes();
+      qrCode.style.display = 'block';
+    });
 
-  trakteerBtn.addEventListener('mouseover', function() {
-    showQRCode(trakteerQr);
-  });
-
-  saweriaBtn.addEventListener('mouseover', function() {
-    showQRCode(saweriaQr);
-  });
-
-  // Attach mouseover and mouseout listeners to QR codes
-  takoQr.addEventListener('mouseover', function() {
-    showQRCode(takoQr); 
-  });
-  takoQr.addEventListener('mouseout', function() {
-    takoQr.style.display = 'none';
-  });
-
-  trakteerQr.addEventListener('mouseover', function() {
-    showQRCode(trakteerQr);
-  });
-  trakteerQr.addEventListener('mouseout', function() {
-    trakteerQr.style.display = 'none';
-  });
-
-  saweriaQr.addEventListener('mouseover', function() {
-    showQRCode(saweriaQr);
-  });
-  saweriaQr.addEventListener('mouseout', function() {
-    saweriaQr.style.display = 'none';
+    donateDiv.addEventListener('mouseout', function() {
+      qrCode.style.display = 'none';
+    });
   });
 });
   </script>

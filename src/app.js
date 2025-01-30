@@ -130,42 +130,46 @@ function init() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const takoBtn = document.querySelector('.tako-btn');
-  const takoQr = document.querySelector('.tako-qrcode');
-  const trakteerBtn = document.querySelector('.trakteer-btn');
-  const trakteerQr = document.querySelector('.trakteer-qrcode');
-  const saweriaBtn = document.querySelector('.saweria-btn');
-  const saweriaQr = document.querySelector('.saweria-qrcode');
+  const takoBtn = document.querySelector('.tako-btn');
+  const takoQr = document.querySelector('.tako-qrcode');
+  const trakteerBtn = document.querySelector('.trakteer-btn');
+  const trakteerQr = document.querySelector('.trakteer-qrcode');
+  const saweriaBtn = document.querySelector('.saweria-btn');
+  const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  takoBtn.addEventListener('mouseover', function() {
-    takoQr.style.display = 'block';
-    trakteerQr.style.display = 'none';
-    saweriaQr.style.display = 'none';
-  });
+  // Function to hide all QR codes
+  function hideAllQRCodes() {
+    takoQr.style.display = 'none';
+    trakteerQr.style.display = 'none';
+    saweriaQr.style.display = 'none';
+  }
 
-  takoBtn.addEventListener('mouseout', function() {
-    takoQr.style.display = 'none';
-  });
+  takoBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes(); // Hide other QR codes first
+    takoQr.style.display = 'block';
+  });
 
-  trakteerBtn.addEventListener('mouseover', function() {
-    trakteerQr.style.display = 'block';
-    takoQr.style.display = 'none';
-    saweriaQr.style.display = 'none';
-  });
+  takoBtn.addEventListener('mouseout', function() {
+    takoQr.style.display = 'none';
+  });
 
-  trakteerBtn.addEventListener('mouseout', function() {
-    trakteerQr.style.display = 'none';
-  });
+  trakteerBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes(); // Hide other QR codes first
+    trakteerQr.style.display = 'block';
+  });
 
-  saweriaBtn.addEventListener('mouseover', function() {
-    saweriaQr.style.display = 'block';
-    trakteerQr.style.display = 'none';
-    takoQr.style.display = 'none';
-  });
+  trakteerBtn.addEventListener('mouseout', function() {
+    trakteerQr.style.display = 'none';
+  });
 
-  saweriaBtn.addEventListener('mouseout', function() {
-    saweriaQr.style.display = 'none';
-  });
+  saweriaBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes(); // Hide other QR codes first
+    saweriaQr.style.display = 'block';
+  });
+
+  saweriaBtn.addEventListener('mouseout', function() {
+    saweriaQr.style.display = 'none';
+  });
 });
   </script>
 

@@ -137,29 +137,52 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  // Get the parent element that contains the buttons and QR codes
-  const donateGroup = document.querySelector('.donate.btn-group'); 
+  // Function to hide all QR codes
+  function hideAllQRCodes() {
+    takoQr.style.display = 'none';
+    trakteerQr.style.display = 'none';
+    saweriaQr.style.display = 'none';
+  }
 
+  // Function to show a specific QR code and hide others
+  function showQRCode(qrCode) {
+    hideAllQRCodes();
+    qrCode.style.display = 'block';
+  }
+
+  // Attach mouseover and mouseout listeners to buttons
   takoBtn.addEventListener('mouseover', function() {
-    takoQr.style.display = 'block';
+    showQRCode(takoQr);
   });
 
   trakteerBtn.addEventListener('mouseover', function() {
-    trakteerQr.style.display = 'block';
+    showQRCode(trakteerQr);
   });
 
   saweriaBtn.addEventListener('mouseover', function() {
-    saweriaQr.style.display = 'block';
+    showQRCode(saweriaQr);
   });
 
-  // Hide QR codes when the mouse leaves the parent container
-  donateGroup.addEventListener('mouseout', function(event) {
-    // Check if the mouse moved to a child element within the parent
-    if (!donateGroup.contains(event.relatedTarget)) {
-      takoQr.style.display = 'none';
-      trakteerQr.style.display = 'none';
-      saweriaQr.style.display = 'none';
-    }
+  // Attach mouseover and mouseout listeners to QR codes
+  takoQr.addEventListener('mouseover', function() {
+    showQRCode(takoQr); 
+  });
+  takoQr.addEventListener('mouseout', function() {
+    takoQr.style.display = 'none';
+  });
+
+  trakteerQr.addEventListener('mouseover', function() {
+    showQRCode(trakteerQr);
+  });
+  trakteerQr.addEventListener('mouseout', function() {
+    trakteerQr.style.display = 'none';
+  });
+
+  saweriaQr.addEventListener('mouseover', function() {
+    showQRCode(saweriaQr);
+  });
+  saweriaQr.addEventListener('mouseout', function() {
+    saweriaQr.style.display = 'none';
   });
 });
   </script>

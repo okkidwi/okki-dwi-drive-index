@@ -137,56 +137,41 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  // Get the parent element that contains the buttons and QR codes
-  const donateGroup = document.querySelector('.donate.btn-group');
+  const donateBtns = [
+      {btn: takoBtn, qr: takoQr},
+      {btn: trakteerBtn, qr: trakteerQr},
+      {btn: saweriaBtn, qr: saweriaQr}
+  ];
 
-  // Function to check if the mouse is within the bounds of an element
-  function isMouseWithinElement(event, element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      event.clientX >= rect.left &&
-      event.clientX <= rect.right &&
-      event.clientY >= rect.top &&
-      event.clientY <= rect.bottom
-    );
-  }
-
-  // Function to hide all QR codes
   function hideAllQRCodes() {
-    takoQr.style.display = 'none';
-    trakteerQr.style.display = 'none';
-    saweriaQr.style.display = 'none';
+    donateBtns.forEach(item => item.qr.style.display = 'none');
   }
 
-  // Add event listeners to each button
-  takoBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes();
-    takoQr.style.display = 'block';
-  });
+  donateBtns.forEach(item => {
+      item.btn.addEventListener('mouseover', () => {
+          hideAllQRCodes();
+          item.qr.style.display = 'block';
+      });
 
-  trakteerBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes();
-    trakteerQr.style.display = 'block';
-  });
+      // Use mousemove to keep the QR code visible
+      item.btn.addEventListener('mousemove', () => {
+          item.qr.style.display = 'block';
+      })
 
-  saweriaBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes();
-    saweriaQr.style.display = 'block';
-  });
+      // Add event listeners to both button and QR code
+      item.btn.addEventListener('mouseout', (event) => {
+          // Check if the relatedTarget is the associated QR code or a child of it
+          if (event.relatedTarget !== item.qr && !item.qr.contains(event.relatedTarget)) {
+              item.qr.style.display = 'none';
+          }
+      });
 
-  // Add a mouseout listener to the parent container
-  donateGroup.addEventListener('mouseout', function(event) {
-    // Check if the mouse is leaving to a child element or outside the container
-    if (
-      !isMouseWithinElement(event, takoBtn) &&
-      !isMouseWithinElement(event, takoQr) &&
-      !isMouseWithinElement(event, trakteerBtn) &&
-      !isMouseWithinElement(event, trakteerQr) &&
-      !isMouseWithinElement(event, saweriaBtn) &&
-      !isMouseWithinElement(event, saweriaQr)
-    ) {
-      hideAllQRCodes();
-    }
+      item.qr.addEventListener('mouseout', (event) => {
+          // Check if the relatedTarget is the associated button or a child of it
+          if (event.relatedTarget !== item.btn && !item.btn.contains(event.relatedTarget)) {
+              item.qr.style.display = 'none';
+          }
+      });
   });
 });
   </script>

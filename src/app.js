@@ -130,46 +130,37 @@ function init() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const takoBtn = document.querySelector('.tako-btn');
-  const takoQr = document.querySelector('.tako-qrcode');
-  const trakteerBtn = document.querySelector('.trakteer-btn');
-  const trakteerQr = document.querySelector('.trakteer-qrcode');
-  const saweriaBtn = document.querySelector('.saweria-btn');
-  const saweriaQr = document.querySelector('.saweria-qrcode');
+  const takoBtn = document.querySelector('.tako-btn');
+  const takoQr = document.querySelector('.tako-qrcode');
+  const trakteerBtn = document.querySelector('.trakteer-btn');
+  const trakteerQr = document.querySelector('.trakteer-qrcode');
+  const saweriaBtn = document.querySelector('.saweria-btn');
+  const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  // Function to hide all QR codes
-  function hideAllQRCodes() {
-    takoQr.style.display = 'none';
-    trakteerQr.style.display = 'none';
-    saweriaQr.style.display = 'none';
-  }
+  // Get the parent element that contains the buttons and QR codes
+  const donateGroup = document.querySelector('.donate.btn-group'); 
 
-  takoBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes(); // Hide other QR codes first
-    takoQr.style.display = 'block';
-  });
+  takoBtn.addEventListener('mouseover', function() {
+    takoQr.style.display = 'block';
+  });
 
-  takoBtn.addEventListener('mouseout', function() {
-    takoQr.style.display = 'none';
-  });
+  trakteerBtn.addEventListener('mouseover', function() {
+    trakteerQr.style.display = 'block';
+  });
 
-  trakteerBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes(); // Hide other QR codes first
-    trakteerQr.style.display = 'block';
-  });
+  saweriaBtn.addEventListener('mouseover', function() {
+    saweriaQr.style.display = 'block';
+  });
 
-  trakteerBtn.addEventListener('mouseout', function() {
-    trakteerQr.style.display = 'none';
-  });
-
-  saweriaBtn.addEventListener('mouseover', function() {
-    hideAllQRCodes(); // Hide other QR codes first
-    saweriaQr.style.display = 'block';
-  });
-
-  saweriaBtn.addEventListener('mouseout', function() {
-    saweriaQr.style.display = 'none';
-  });
+  // Hide QR codes when the mouse leaves the parent container
+  donateGroup.addEventListener('mouseout', function(event) {
+    // Check if the mouse moved to a child element within the parent
+    if (!donateGroup.contains(event.relatedTarget)) {
+      takoQr.style.display = 'none';
+      trakteerQr.style.display = 'none';
+      saweriaQr.style.display = 'none';
+    }
+  });
 });
   </script>
 
@@ -1065,19 +1056,6 @@ function render_search_result_list() {
 	</div>
 	<div id="readme_md" style="display:none; padding: 20px 20px;"></div>`;
 	$('#content').html(content);
-
-	 ```html
- <div class="tako-running-text" style="margin-top: 35px;">
-    <div class="card" style="padding: 0 0 0.3rem 0; border-radius: .5rem; width: 100%; overflow: hidden; background-color: #37A2EA;">
-      <iframe src="https://tako.id/overlay/running-text?overlay_key=cht6eaeash0yhgmcf3n9zshz" 
-          height="72px" 
-          width="100%" 
-          style="border: none; color-scheme: light;">
-      </iframe
-   </iframe>
- </div>
- ```
-
 	$('#list').html(`<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div></div>`);
 	$('#readme_md').hide().html('');
 	$('#head_md').hide().html('');

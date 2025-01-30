@@ -137,8 +137,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const saweriaBtn = document.querySelector('.saweria-btn');
   const saweriaQr = document.querySelector('.saweria-qrcode');
 
-  // Get all the donate divs
-  const donateDivs = document.querySelectorAll('.donate.btn');
+  // Get the parent element that contains the buttons and QR codes
+  const donateGroup = document.querySelector('.donate.btn-group');
+
+  // Function to check if the mouse is within the bounds of an element
+  function isMouseWithinElement(event, element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      event.clientX >= rect.left &&
+      event.clientX <= rect.right &&
+      event.clientY >= rect.top &&
+      event.clientY <= rect.bottom
+    );
+  }
 
   // Function to hide all QR codes
   function hideAllQRCodes() {
@@ -147,19 +158,35 @@ document.addEventListener('DOMContentLoaded', function() {
     saweriaQr.style.display = 'none';
   }
 
-  // Add event listeners to each donate div
-  donateDivs.forEach(donateDiv => {
-    const button = donateDiv.querySelector('.btn');
-    const qrCode = donateDiv.querySelector('.qrcode');
+  // Add event listeners to each button
+  takoBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes();
+    takoQr.style.display = 'block';
+  });
 
-    donateDiv.addEventListener('mouseover', function() {
+  trakteerBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes();
+    trakteerQr.style.display = 'block';
+  });
+
+  saweriaBtn.addEventListener('mouseover', function() {
+    hideAllQRCodes();
+    saweriaQr.style.display = 'block';
+  });
+
+  // Add a mouseout listener to the parent container
+  donateGroup.addEventListener('mouseout', function(event) {
+    // Check if the mouse is leaving to a child element or outside the container
+    if (
+      !isMouseWithinElement(event, takoBtn) &&
+      !isMouseWithinElement(event, takoQr) &&
+      !isMouseWithinElement(event, trakteerBtn) &&
+      !isMouseWithinElement(event, trakteerQr) &&
+      !isMouseWithinElement(event, saweriaBtn) &&
+      !isMouseWithinElement(event, saweriaQr)
+    ) {
       hideAllQRCodes();
-      qrCode.style.display = 'block';
-    });
-
-    donateDiv.addEventListener('mouseout', function() {
-      qrCode.style.display = 'none';
-    });
+    }
   });
 });
   </script>

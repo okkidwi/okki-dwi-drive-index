@@ -54,7 +54,7 @@ function init() {
       <div class="col-lg-6 col-md-12">
         <div class="card text-white mb-3 h-100">
           <div class="card-header">
-            <i class="fa-solid fa-gift fa-fw"></i> Support Admin dengan Donasi
+            <i class="fa-solid fa-gift fa-fw"></i> Dukung Admin dengan Donasi
           </div>
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <div class="donate btn-group">
@@ -1062,6 +1062,18 @@ function render_search_result_list() {
 	<div id="readme_md" style="display:none; padding: 20px 20px;"></div>`;
 	$('#content').html(content);
 
+	 ```html
+ <div class="tako-running-text" style="margin-top: 35px;">
+    <div class="card" style="padding: 0 0 0.3rem 0; border-radius: .5rem; width: 100%; overflow: hidden; background-color: #37A2EA;">
+      <iframe src="https://tako.id/overlay/running-text?overlay_key=cht6eaeash0yhgmcf3n9zshz" 
+          height="72px" 
+          width="100%" 
+          style="border: none; color-scheme: light;">
+      </iframe
+   </iframe>
+ </div>
+ ```
+
 	$('#list').html(`<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div></div>`);
 	$('#readme_md').hide().html('');
 	$('#head_md').hide().html('');
@@ -1519,7 +1531,7 @@ async function file(path) {
 
 const trakteerWidget = `<div class="col-md-12">
 <div class="card" style="padding: 0 0 0.3rem 0; border-radius: .5rem; width: 100%; overflow: hidden; background-color: #BE1E2D;">
-  <iframe src="https://stream.trakteer.id/running-text-default.html?rt_font=Lato&amp;rt_count=6&amp;rt_speed=normal&amp;rt_theme=default&amp;rt_1_clr1=rgba%280%2C+0%2C+0%2C+0%29&amp;rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&amp;rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&amp;rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&amp;rt_septype=image&amp;rt_messages=Yuk+Bantu+Admin+Dengan+Donasi+!&amp;rt_txtshadow=false&amp;creator_name=okkidwi&amp;page_url=trakteer.id/okkidwi&amp;mod=3&amp;key=trstream-GYRRz9HrHogCmFO4A572&hash=9m8d5jpema95e07y" 
+  <iframe src="https://stream.trakteer.id/running-text-default.html?rt_font=Lato&amp;rt_count=6&amp;rt_speed=normal&amp;rt_theme=default&amp;rt_1_clr1=rgba%280%2C+0%2C+0%2C+0%29&amp;rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&amp;rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&amp;rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&amp;rt_septype=image&amp;rt_messages=Yuk+Dukung+Admin+Dengan+Donasi!&amp;rt_txtshadow=false&amp;creator_name=okkidwi&amp;page_url=trakteer.id/okkidwi&amp;mod=3&amp;key=trstream-GYRRz9HrHogCmFO4A572&hash=9m8d5jpema95e07y" 
     height="40px" 
     width="100%" 
     style="border: none; color-scheme: light;">

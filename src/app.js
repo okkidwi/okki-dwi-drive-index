@@ -67,15 +67,6 @@ function init() {
               <img alt="Love" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love.png">
             </div>
           </div>
-          <div class="donate btn me-4">
-            <a class="btn tako-btn" href="https://tako.id/okkidwi" title="Klik saya!" style="background: #37A2EA;" target="_blank">
-              <i class="fab fa-paypal"></i> Tako
-            </a>
-            <div class="qrcode card tako-qrcode" style="padding: 1rem; display: none;">
-              <div style="padding-bottom: 1rem;">Terima kasih ❤</div>
-              <img alt="Love 3" src="https://raw.githubusercontent.com/okkidwi/okki-dwi-drive-index/master/images/love-3.png">
-            </div>
-          </div>
           <div class="donate btn">
             <a class="btn saweria-btn" href="https://saweria.co/okkidwi" title="Klik saya!" style="background: #f5a623FF;" target="_blank">
               <i class="fab fa-paypal"></i> Saweria
